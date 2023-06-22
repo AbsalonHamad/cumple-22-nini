@@ -12,26 +12,18 @@
 </head>
 
 <body>
-  <div id="outside">
-    <p id="outside-title">
-      ¡Presiona Siguiente!
-    </p>
-    <img id="outside-pic" src="assets/imgs/birthday-card-finished-rainbow.png">
-    <button onclick="open_card()">Siguiente</button>
-  </div>
-
-  <div id="inside">
-    <p id="inside-title">
-      ¡Feliz cumpleaños 22, Nina!
-    </p>
-
-    <img id="inside-pic" src="assets/imgs/birthday-card-flowers.png">
-
-    <p id="message">
-      ¡Espero que la hayas pasado genial! Tendras tiempo para un Codsito? :)
-    </p>
-
-    <button onclick="close_card()">Cerrar</button>
+  <div class="wrapper">
+    <div id="wellcome" class="wrapper__item show">
+      <h1 class="title">¡Presiona Siguiente!</h1>
+      <img class="image" src="assets/imgs/birthday-card-finished-rainbow.png">
+      <button class="btn-candy" onclick="next()">Siguiente</button>
+    </div>
+    <div id="happybirthday" class="wrapper__item show-ever">
+      <h1 class="title">¡Feliz cumpleaños 22, Nina!</h1>
+      <img class="image" src="assets/imgs/birthday-card-flowers.png">
+      <h3 class="subtitle">Espero y hayas teniado un dia maravillosamente especial, TQM Hamad 😊</h3>
+      <button class="btn-candy" onclick="preview()">Cerrar</button>
+    </div>
   </div>
 </body>
 </html>
